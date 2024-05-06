@@ -4,7 +4,7 @@ import helpers from "yargs/helpers";
 const SCRIPT_NAME = "rle"
 const RLE_USAGE = "$0 [option]... [input-file]";
 
-export class yargsInstance {
+export class YargsInstance {
 
     private argv;
     private encodeOrDecode:string = '';
