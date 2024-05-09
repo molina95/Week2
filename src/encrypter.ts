@@ -40,11 +40,7 @@ export class Encrypter {
 
             this.previousChar = onChar;
         }
-        return charSequence;
-
-
-
-        
+        return charSequence;    
     }
 
     public getFinalCharSequence(): string {
