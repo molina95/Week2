@@ -7,7 +7,7 @@ const RLE_USAGE = "$0 [option]... [input-file]";
 export class YargsInstance {
 
     private argv;
-    private encodeOrDecode:string = '';
+    private encodeOrDecode:'encode' | 'decode' = 'encode';
     private instance;
     private filePath:string = '';
 
@@ -57,7 +57,7 @@ export class YargsInstance {
         this.throwError(`${this.argv.$0}: --${this.getEncodeOrDecode()} Missing input-file`);
     }
 
-    public getEncodeOrDecode():string{
+    public getEncodeOrDecode():'encode'|'decode'{
         return this.encodeOrDecode;
     }
     

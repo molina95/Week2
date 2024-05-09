@@ -19,7 +19,7 @@ export class FileHandler {
         let filePrefix = '';
         if(mode == 'encode') filePrefix = 'enc_';
         if(mode == 'decode') filePrefix = 'dec_';
-        this.outputFile = fs.createWriteStream(filePrefix + filePath);
+        this.outputFile = fs.createWriteStream(filePrefix + path.basename(filePath));
         this.encrypter = new Encrypter();
         this.decrypter = new Decrypter();
     }
