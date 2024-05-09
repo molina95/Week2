@@ -1,7 +1,5 @@
 import { YargsInstance } from "./yargsinstance";
-import { Encrypter } from "./encrypter";
 import {FileHandler} from "./filehandler";
-import fs from "fs";
 
 const yargs = new YargsInstance();
 const option: 'encode' | 'decode' = yargs.getEncodeOrDecode();
