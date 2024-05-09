@@ -34,7 +34,7 @@ export class FileHandler {
             this.inputFile.on('end', () => {
                 this.outputFile.write(this.encrypter.getFinalCharSequence());
                 this.outputFile.close();
-                console.log("End of the Stream");
+                console.log("Finished encoding file");
             });
         }catch(fileError:any){
             switch (fileError.code) {
@@ -59,7 +59,7 @@ export class FileHandler {
             this.inputFile.on('end', () => {
                 this.outputFile.write(this.decrypter.getFinalCharSequence());
                 this.outputFile.close();
-                console.log("End of the Stream");
+                console.log("Finished decoding file");
             });
         }catch(fileError:any){
             switch (fileError.code) {

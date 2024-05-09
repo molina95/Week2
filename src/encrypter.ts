@@ -16,7 +16,6 @@ export class Encrypter {
                 if (this.previousChar.charCodeAt(0) == onChar.charCodeAt(0) || this.previousChar.charCodeAt(0) == (onChar.charCodeAt(0) + 32)) {
                     this.num++;
                 } else {
-                    console.log(`${this.previousChar.toUpperCase()}${this.num}`);
                     charSequence = `${this.previousChar.toUpperCase()}${this.num}`;
                     this.num = 1;
                 }
@@ -24,7 +23,6 @@ export class Encrypter {
                 if (this.previousChar.charCodeAt(0) == onChar.charCodeAt(0) || this.previousChar.charCodeAt(0) == (onChar.charCodeAt(0) + 32)) {
                     this.num++;
                 } else {
-                    console.log(`${this.previousChar.toUpperCase()}${this.num}`);
                     charSequence = `${this.previousChar.toUpperCase()}${this.num}`;
                     this.num = 1;
                 }
@@ -32,7 +30,6 @@ export class Encrypter {
                 if (this.previousChar == onChar) {
                     this.num++;
                 } else {
-                    console.log(`${this.previousChar.toUpperCase()}${this.num}`);
                     charSequence = `${this.previousChar.toUpperCase()}${this.num}`;
                     this.num = 1;
                 }
@@ -44,7 +41,6 @@ export class Encrypter {
     }
 
     public getFinalCharSequence(): string {
-        console.log(`${this.previousChar}${this.num}`);
         return `${this.previousChar.toUpperCase()}${this.num}`;
     }
 }

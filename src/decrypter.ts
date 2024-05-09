@@ -27,7 +27,6 @@ export class Decrypter {
             this.repeat += streamChar;
         }
 
-        console.log(`${this.char}${this.repeat}`);
         return sequence;
     }
 
